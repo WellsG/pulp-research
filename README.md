@@ -1,8 +1,8 @@
 # pulp-research
 
-$> sudo yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-$> sudo yum install mongodb-server
-$> sudo service mongod start
+$> sudo yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 
+$> sudo yum install mongodb-server  
+$> sudo service mongod start  
 $> sudo yum install qpid-cpp-server qpid-cpp-server-linearstore
 $> yum install cyrus-sasl-plain
 $> sudo service qpidd start
