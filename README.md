@@ -1,19 +1,19 @@
 # pulp-research
 
-$> sudo yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 
+$> sudo yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm   
 $> sudo yum install mongodb-server  
 $> sudo service mongod start  
-$> sudo yum install qpid-cpp-server qpid-cpp-server-linearstore
-$> yum install cyrus-sasl-plain
-$> sudo service qpidd start
-$> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools
-$> sudo vim /etc/yum.repos.d/rhel-pulp.repo
-$> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools
-
-$>  sudo vim /etc/pulp/server.conf 
-$>  sudo -u apache pulp-manage-db
-$>  sudo service httpd start
-$>  sudo service pulp_workers start
+$> sudo yum install qpid-cpp-server qpid-cpp-server-linearstore  
+$> yum install cyrus-sasl-plain  
+$> sudo service qpidd start  
+$> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools  
+$> sudo vim /etc/yum.repos.d/rhel-pulp.repo  
+$> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools  
+  
+$>  sudo vim /etc/pulp/server.conf      
+$>  sudo -u apache pulp-manage-db   
+$>  sudo service httpd start  
+$>  sudo service pulp_workers start  
 $>  sudo service pulp_celerybeat start
 $>  sudo service pulp_resource_manager start
 $>  sudo yum install pulp-admin-client pulp-rpm-admin-extensions pulp-puppet-admin-extensions pulp-docker-admin-extensions
