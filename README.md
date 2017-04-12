@@ -11,31 +11,31 @@ $> sudo vim /etc/yum.repos.d/rhel-pulp.repo
 $> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools  
   
 $>  sudo vim /etc/pulp/server.conf      
-$>  sudo -u apache pulp-manage-db   
+$>  sudo -u apache pulp-manage-db      
 $>  sudo service httpd start  
-$>  sudo service pulp_workers start  
-$>  sudo service pulp_celerybeat start
-$>  sudo service pulp_resource_manager start
-$>  sudo yum install pulp-admin-client pulp-rpm-admin-extensions pulp-puppet-admin-extensions pulp-docker-admin-extensions
-$>  sudo vim /etc/pulp/admin/admin.conf 
-$>  pulp-admin list
-
-$>  sudo yum install pulp-consumer-client pulp-rpm-consumer-extensions pulp-puppet-consumer-extensions pulp-agent pulp-rpm-handlers pulp-rpm-yumplugins pulp-puppet-handlers python-gofer-qpid
-$>  sudo vim /etc/pulp/consumer/consumer.conf 
-$>  sudo service goferd start
-$>  pulp-admin repo --help
-
-$>  pulp-admin login -u admin
-$>  sudo yum install pulp-rpm-plugins.noarch
-$>  pulp-admin rpm repo create --repo-id=foo
-$>  pulp-admin repo list
-
-$>  sudo yum install pulp-rpm-plugins
-
-$>  sudo vim /etc/pulp/server/plugins.conf.d/
-$>  vim /etc/pulp/server/plugins.conf.d/
-
-$>  sudo apachectl stop
-$>  sudo yum install pulp-rpm-plugins
-
-$>  sudo yum install pulp-rpm-admin-extensions
+$>  sudo service pulp_workers start     
+$>  sudo service pulp_celerybeat start   
+$>  sudo service pulp_resource_manager start   
+$>  sudo yum install pulp-admin-client pulp-rpm-admin-extensions pulp-puppet-admin-extensions pulp-docker-admin-extensions   
+$>  sudo vim /etc/pulp/admin/admin.conf    
+$>  pulp-admin list   
+    
+$>  sudo yum install pulp-consumer-client pulp-rpm-consumer-extensions pulp-puppet-consumer-extensions pulp-agent pulp-rpm-handlers pulp-rpm-yumplugins pulp-puppet-handlers python-gofer-qpid   
+$>  sudo vim /etc/pulp/consumer/consumer.conf     
+$>  sudo service goferd start    
+$>  pulp-admin repo --help    
+     
+$>  pulp-admin login -u admin    
+$>  sudo yum install pulp-rpm-plugins.noarch    
+$>  pulp-admin rpm repo create --repo-id=foo    
+$>  pulp-admin repo list    
+    
+$>  sudo yum install pulp-rpm-plugins    
+    
+$>  sudo vim /etc/pulp/server/plugins.conf.d/    
+$>  vim /etc/pulp/server/plugins.conf.d/    
+    
+$>  sudo apachectl stop    
+$>  sudo yum install pulp-rpm-plugins     
+     
+$>  sudo yum install pulp-rpm-admin-extensions    
