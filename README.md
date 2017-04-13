@@ -22,6 +22,8 @@ $>  sudo service httpd start
 $>  sudo service pulp_workers start     
 $>  sudo service pulp_celerybeat start   
 $>  sudo service pulp_resource_manager start   
+
+### admin-client [Open Url](http://docs.pulpproject.org/user-guide/admin-client/index.html)
 $>  sudo yum install pulp-admin-client pulp-rpm-admin-extensions pulp-puppet-admin-extensions pulp-docker-admin-extensions   
 $>  sudo vim /etc/pulp/admin/admin.conf    
 $>  pulp-admin list   
