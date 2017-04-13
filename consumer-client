@@ -1,0 +1,3 @@
+Consumer setup and use
+
+$> sudo pulp-consumer -u admin -p admin register --consumer-id=con1
