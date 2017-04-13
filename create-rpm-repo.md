@@ -1,3 +1,5 @@
+### Sync and Publish a Repo
+
 $> pulp-admin login -u admin    
 $> pulp-admin rpm repo create --repo-id=foo     
 $> pulp-admin rpm repo create --repo-id=zoo1 --relative-url=zoo1 --feed=http://repos.fedorapeople.org/repos/pulp/pulp/demo_repos/zoo/     
