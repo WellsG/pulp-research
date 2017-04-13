@@ -1,11 +1,17 @@
 # pulp-research
 
 $> sudo yum install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm   
+
+### MongoDB
 $> sudo yum install mongodb-server  
 $> sudo service mongod start  
+
+### Message Broker
 $> sudo yum install qpid-cpp-server qpid-cpp-server-linearstore  
 $> yum install cyrus-sasl-plain  
 $> sudo service qpidd start  
+
+### Pulp
 $> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools  
 $> sudo vim /etc/yum.repos.d/rhel-pulp.repo  
 $> sudo yum install pulp-server python-gofer-qpid python-qpid qpid-tools  
